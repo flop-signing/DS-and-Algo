@@ -11,6 +11,8 @@ public class SelectionSort {
 
     }
 
+    // we Follow the approach that is at first find the maximum or minimum element from the array and then swap it with appropriate index and continue the process.
+
     static void selectionSort(int[] arr) {
         for (int i = 0; i < arr.length; i++) {
             // Find the maximum item in the remaining array and swapped with correct index
