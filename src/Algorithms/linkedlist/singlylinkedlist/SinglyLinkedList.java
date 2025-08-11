@@ -91,6 +91,23 @@ public class SinglyLinkedList {
 
     }
 
+    // Adding through Recursion
+    private Node insertRecursion(int value, int index, Node node) {
+        if (index == 0) {
+            Node temp = new Node(value, node);
+            size++;
+            return temp;
+
+
+        }
+        node.next = insertRecursion(value, index - 1, node);
+        return node;
+    }
+
+    public void insertRecursion(int value, int index) {
+        head=insertRecursion(value, index, head);
+    }
+
 
     public Node get(int index) {
         Node node = head;
@@ -104,11 +121,11 @@ public class SinglyLinkedList {
 
     public Node find(int value) {
         Node node = head;
-        while(node!=null){
-            if(node.value==value){
+        while (node != null) {
+            if (node.value == value) {
                 return node;
             }
-            node=node.next;
+            node = node.next;
         }
         return null;
     }
