@@ -25,7 +25,7 @@ class QueueUsingLinkedList {
         }
         size++;
     }
-    
+
     public int dequeue() {
         if (front == null) {
             throw new RuntimeException("Queue Underflow");
