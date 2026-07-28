@@ -45,5 +45,6 @@ public class Main {
         list.display();
         System.out.println("\n");
         System.out.println("Maximum Element is: " + list.maxElement());
+        list.searchElement(30);
     }
 }

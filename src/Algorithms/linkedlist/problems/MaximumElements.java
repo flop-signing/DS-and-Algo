@@ -24,8 +24,8 @@ public class MaximumElements {
             head = node;
             tail = node;
         }
-        tail.next=node;
-        tail=node;
+        tail.next = node;
+        tail = node;
     }
 
     public void display() {
@@ -46,5 +46,27 @@ public class MaximumElements {
             temp = temp.next;
         }
         return max;
+    }
+
+    public void searchElement(int target) {
+        Node result = searchElement(head, target);
+
+        if (result != null) {
+            System.out.println("Found: " + result.value);
+        } else {
+            System.out.println("Not found");
+        }
+    }
+
+    private Node searchElement(Node head, int target) {
+        if (head == null) {
+            return null;
+        }
+
+        if (head.value == target) {
+            return head;
+        }
+
+        return searchElement(head.next, target);
     }
 }
