@@ -46,4 +46,17 @@ public class RemoveDuplicate {
             }
         }
     }
+
+    public void reverse() {
+        Node temp = head;
+        Node prev = null;
+        Node next;
+        while (temp != null) {
+            next = temp.next;
+            temp.next = prev;
+            prev = temp;
+            temp = next;
+        }
+        head = prev;
+    }
 }

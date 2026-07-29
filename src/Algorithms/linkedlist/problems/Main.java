@@ -72,9 +72,10 @@ public class Main {
         list.insert(8);
         list.insert(9);
         list.insert(10);
-        list.insert(4);
         list.display();
+        list.reverse();
         System.out.println("\n");
+        list.display();
 
 
     }
