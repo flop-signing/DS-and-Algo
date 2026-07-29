@@ -47,7 +47,7 @@ public class Main {
         System.out.println("Maximum Element is: " + list.maxElement());
         list.searchElement(30);*/
 
-        LinkedListIsSortedOrNot list = new LinkedListIsSortedOrNot();
+       /* LinkedListIsSortedOrNot list = new LinkedListIsSortedOrNot();
         list.insert(1);
         list.insert(2);
         list.insert(3);
@@ -60,7 +60,22 @@ public class Main {
         list.insert(4);
         list.display();
         System.out.println("\n");
-        System.out.println(list.isSorted() ? "TRUE" : "FALSE");
+        System.out.println(list.isSorted() ? "TRUE" : "FALSE");*/
+
+        RemoveDuplicate list = new RemoveDuplicate();
+        list.insert(1);
+        list.insert(2);
+        list.insert(3);
+        list.insert(4);
+        list.insert(5);
+        list.insert(7);
+        list.insert(8);
+        list.insert(9);
+        list.insert(10);
+        list.insert(4);
+        list.display();
+        System.out.println("\n");
+
 
     }
 }
