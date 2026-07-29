@@ -31,7 +31,7 @@ public class Main {
         System.out.println("Sum of Elements are: " + list.sumOfAllElements());*/
 
 
-        MaximumElements list = new MaximumElements();
+/*        MaximumElements list = new MaximumElements();
         list.insert(1);
         list.insert(3);
         list.insert(6);
@@ -45,6 +45,22 @@ public class Main {
         list.display();
         System.out.println("\n");
         System.out.println("Maximum Element is: " + list.maxElement());
-        list.searchElement(30);
+        list.searchElement(30);*/
+
+        LinkedListIsSortedOrNot list = new LinkedListIsSortedOrNot();
+        list.insert(1);
+        list.insert(2);
+        list.insert(3);
+        list.insert(4);
+        list.insert(5);
+        list.insert(7);
+        list.insert(8);
+        list.insert(9);
+        list.insert(10);
+        list.insert(4);
+        list.display();
+        System.out.println("\n");
+        System.out.println(list.isSorted() ? "TRUE" : "FALSE");
+
     }
 }
