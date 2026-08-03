@@ -1,4 +1,4 @@
-package designpatterns.impl;
+package designpatterns.impl.singleton;
 
 /*
 * Is it thread-safe?
@@ -29,7 +29,6 @@ public class EagerSingleton {
 
 
     }
-    // Global access point
     public static EagerSingleton getInstance() {
         return INSTANCE;
     }
