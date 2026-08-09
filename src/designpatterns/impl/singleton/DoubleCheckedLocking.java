@@ -40,8 +40,8 @@ Why did DCL come?	To avoid synchronizing every call while keeping lazy initializ
 Why first if?	Avoids locking after the instance already exists.
 Why second if?	Prevents a second thread from creating another instance after waiting for the lock.
 Why volatile?	Prevents unsafe publication due to instruction reordering and guarantees visibility.
-Is it thread-safe?	✅ Yes (when volatile is used).
-Is it lazy?	✅ Yes.
+Is it thread-safe Yes (when volatile is used).
+Is it lazy?	 Yes.
 A Small Correction to Keep in Mind
 
 When explaining instruction reordering, you'll often see the three steps written as:
