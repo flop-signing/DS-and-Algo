@@ -75,6 +75,24 @@ public class BinaryTreeImproved {
         }
     }
 
+    public static void levelOrder(Node temp) {
+        Queue<Node> queue = new LinkedList<>();
+        System.out.println(temp.data);
+        queue.add(temp);
+        while (!queue.isEmpty()) {
+            temp = queue.poll();
+            System.out.print(temp.data + " ");
+
+            if (temp.left != null) {
+                queue.add(temp.left);
+            }
+            if (temp.right != null) {
+                queue.add(temp.right);
+            }
+        }
+
+    }
+
     public static void preorderIterative(Node temp) {
         Stack<Node> stack = new Stack<>();
         while (temp != null || !stack.isEmpty()) {
@@ -98,6 +116,9 @@ public class BinaryTreeImproved {
 
         System.out.print("\nPreorder (Iterative): ");
         preorderIterative(root);
+
+        System.out.println("\nLevel order (Iterative): ");
+        levelOrder(root);
     }
 
 
